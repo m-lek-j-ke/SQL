@@ -1,0 +1,23 @@
+--Creating the table and naming what type of data will be in each column
+
+CREATE TABLE My_Store (id INTEGER PRIMARY KEY, Item TEXT, Inventory INTEGER, Price INTEGER, Cost_of_goods INTEGER);
+
+INSERT INTO My_Store VALUES (1, "Apples", 100, 2, .50);
+SELECT * FROM My_Store;
+INSERT INTO My_Store VALUES (2, "Oranges", 75, 1.75, .35);
+INSERT INTO My_Store VALUES (3, "Bananas", 55, 2.25, .65);
+INSERT INTO My_Store VALUES (4, "Steak", 35, 10, 3.50);
+INSERT INTO My_Store VALUES (5, "Hot Dogs", 55, 6.50, 1.50);
+INSERT INTO My_Store VALUES (6, "Deli Meat", 150, 2.50, .75);
+INSERT INTO My_Store VALUES (7, "Mustard", 500, 1.75, .60);
+INSERT INTO My_Store VALUES (8, "Mayo", 125, 1.85, .65);
+INSERT INTO My_Store VALUES (9, "Toothpaste", 75, 5.50, 2.35);
+INSERT INTO My_Store VALUES (10, "Toothbrush", 65, 8, 3);
+
+-- Display the Data base
+
+SELECT * FROM My_Store;
+
+-- Ordering by the cost of the items
+
+SELECT * FROM My_Store ORDER BY Price DESC;
